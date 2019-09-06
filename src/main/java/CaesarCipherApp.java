@@ -5,16 +5,14 @@ public class CaesarCipherApp {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the String for Encryption: ");
-        String message ;
-        message = sc.next();
-        String key;
-       key = sc.next();
-        System.out.println("Enter a key for your choose:");
+        System.out.println(" Input the plaintext message : ");
+        String plaintext = sc.nextLine();
+        System.out.println(" Enter the value by which each character in the plaintext message gets shifted : ");
+        int shift = sc.nextInt();;
         Encryption encrypty = new Encryption();
-        String pingPongResult = encrypty.encrypt(message, 3);
+        String pingPongResult = encrypty.encrypt(plaintext, 3);
         Decryption decrypt = new Decryption();
-        String pingPongResult2 = decrypt.decrypt(message, 3);
+        String pingPongResult2 = decrypt.decrypt(plaintext, 3);
 
         System.out.println(pingPongResult);
         System.out.println(pingPongResult2);
