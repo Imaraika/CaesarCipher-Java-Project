@@ -8,7 +8,8 @@ public class Decryption {
         for (int i = 0; i < cipherText.length(); i++)
         {
             int charPosition = ALPHABET.indexOf(cipherText.charAt(i));
-            int keyVal = (charPosition - shiftKey) % 26;
+//            int keyVal = (charPosition - shiftKey) % 26;
+            int keyVal = 0;
             if (keyVal < 0)
             {
                 keyVal = ALPHABET.length() + keyVal;
