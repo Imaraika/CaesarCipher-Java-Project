@@ -6,8 +6,11 @@ public class CaesarCipherApp {
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String for Encryption: ");
-        String message = new String();
+        String message ;
         message = sc.next();
+        String key;
+       key = sc.next();
+        System.out.println("Enter a key for your choose:");
         Encryption encrypty = new Encryption();
         String pingPongResult = encrypty.encrypt(message, 3);
         Decryption decrypt = new Decryption();
