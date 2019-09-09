@@ -27,3 +27,16 @@ The application allows users to do the following:
 'then put the code with its rescpective classes'
 'then run the main'
 ## Technology Used
+Intelj 
+Java 
+
+## Contributions
+
+Pull requests are encouraged.
+
+## Contact Details
+
+You can contact me at inange2013@gmail.com.
+
+## License
+Copyright (c)2019 Ange Ingabire
