@@ -8,9 +8,9 @@ public class Encryption {
         for (int i = 0; i < plainText.length(); i++)
         {
             int charPosition = ALPHABET.indexOf(plainText.charAt(i));
-            int keyVal = (shiftKey + charPosition) % 26;
-            char replaceVal = ALPHABET.charAt(keyVal);
-            cipherText += replaceVal;
+            int keyValue = (shiftKey + charPosition) % 26;
+            char replaceKeyVal = ALPHABET.charAt(keyValue);
+            cipherText += replaceKeyVal;
         }
         return cipherText;
     }

@@ -7,21 +7,19 @@ public class CaesarCipherApp {
         Scanner sc = new Scanner(System.in);
         System.out.println(" Input the plaintext message : ");
         String plaintext = sc.nextLine();
-        System.out.println(" Enter the value by which each character in the plaintext message gets shifted : ");
-        int shift = sc.nextInt();
+        System.out.println(" Enter any Key value you want Please  : ");
+        int shiftky = sc.nextInt();
         Encryption encrypty = new Encryption();
-        String pingPongResult = encrypty.encrypt(plaintext,shift);
-        System.out.println(pingPongResult);
+        String encryptionResult = encrypty.encrypt(plaintext,shiftky);
+        System.out.println(encryptionResult);
         Scanner scd = new Scanner(System.in);
         System.out.println(" Input the CipherText message : ");
         String cipherText = scd.nextLine();
-        System.out.println(" Enter the key: ");
+        System.out.println(" Enter the same key value as the above: ");
         int shiftkey = scd.nextInt();
         Decryption decrypt = new Decryption();
-        String pingPongResult2 = decrypt.decrypt(cipherText, shiftkey);
-
-
-        System.out.println(pingPongResult2);
+        String decryptionResult = decrypt.decrypt(cipherText, shiftkey);
+        System.out.println(decryptionResult);
         sc.close();
     }
 
