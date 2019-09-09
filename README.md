@@ -21,7 +21,7 @@ The application allows users to do the following:
 
  Cloning
 'Make sure you have all the Requirements or running angular apps installed such as node,npm, tsc and watchman'
-'Clone the project into your machine from https://github.com/Imaraika/CaesarCipherJavaProject.git'
+'Clone the project into your machine from https://github.com/Imaraika/CaesarCipher-Java-Project.git'
 'open Intelj and then make sure to create a project with the same name as that one.'
 'the name of project must have the same name with clasess'
 'then put the code with its rescpective classes'
